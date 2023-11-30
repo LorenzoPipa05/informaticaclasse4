@@ -1,0 +1,43 @@
+<html lang="it">
+    <head>
+        <title> Menu Pizzeria </title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+            h1 {
+                color: #333;
+            }
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            li{
+                margin-bottom: 10px;
+            }
+            .price {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Menu Pizeria </h1>
+        <?php
+        $menu = array(
+            "Margherita" => 8.50,
+            "Capricciosa" => 10.00,
+            "Quattro formaggi" => 12.50,
+            "Diavola" => 11.00,
+            "Vegetariana" => 9.50,
+        );
+        ?>
+        <ul>
+            <?php
+                 foreach ($menu as $pizza => $price) {
+                    echo "<li>$pizza - <span class='price'>£$price</span></li>";
+                 }
+                 ?>
+        </ul>
+    </body>
+</html>
