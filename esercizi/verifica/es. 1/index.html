@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <title> Tabellina </title>
+    </head>
+    <body>
+        <form method="get" action="./contenuto.php">
+        <label for="text">Testo che desideri inserire nella tabella:</label>
+        <input type="text" id="text" name="text">
+        <label for="rows">Inserisci il numero di righe (A):</label>
+        <input type="number" id="rows" name="rows" min="1">
+        <label for="cols">Inserisci il numero di colonne (B):</label>
+        <input type="number" id="cols" name="cols" min="1">
+        <input type="submit" value="invia">
+    </form>
+    </body>
+    </html>
